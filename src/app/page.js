@@ -1,4 +1,8 @@
 import Image from "next/image";
+export const config = {
+  runtime: 'nodejs', // Forces the page to use the Node.js server runtime
+};
+
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 export default function Home() {
   return (
