@@ -1,6 +1,11 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+
+export const config = {
+  runtime: 'nodejs', // Forces the page to use the Node.js server runtime
+};
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
